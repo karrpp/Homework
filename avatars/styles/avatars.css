@@ -1,0 +1,29 @@
+.avatar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #dbdbdb;
+  padding: 20px;
+}
+
+.avatar-wrapper {
+  position: relative;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #4cfe88;
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
