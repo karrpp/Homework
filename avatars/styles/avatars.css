@@ -1,8 +1,21 @@
-.avatar-container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  min-height: 100vh; /* 화면 높이를 100%로 설정 */
+  background-color: #f0f0f0; /* 페이지 배경색 설정 */
+}
+
+.avatar-container {
+  display: grid;
+  grid-template-columns: repeat(4, 64px); /* 4개의 고정된 열 */
+  grid-gap: 20px; /* 아이템 간의 간격 */
   background-color: #dbdbdb;
   padding: 20px;
 }
@@ -24,6 +37,13 @@
   right: 5px;
   width: 10px;
   height: 10px;
-  background-color: green;
   border-radius: 50%;
+}
+
+.status-green {
+  background-color: green;
+}
+
+.status-gray {
+  background-color: gray;
 }
